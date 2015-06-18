@@ -14,5 +14,8 @@ You can check the API Load in the index.html file.
 # DEMO
 https://www.youtube.com/watch?v=_LMx0X1uoLg 
 
+# Running the app
+To run the app, you need to use the SAP Web IDE. Just import the project inside the IDE and it should works fine.
+
 # Notes
 It was developed in one week and is not accordingly to the best practices. Anyway, feel free to contribute to this repo.
