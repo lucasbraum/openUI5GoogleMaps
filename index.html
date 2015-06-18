@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		
+		<title>SAP Service Maintenance Map</title>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m, sap.ui.layout"
+				data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-resourceroots='{"view": "./"}'
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+		
+		
+			<script>
+	    
+        	    function initializeUI5(){
+        	        
+        			// set i18n model
+        			var oModel = new sap.ui.model.resource.ResourceModel({ bundleUrl: "assets/i18n/messageBundle.properties" });
+        			sap.ui.getCore().setModel(oModel, "i18n");
+        			sap.ui.localResources("view");
+        			
+        			$.sap.registerModulePath("ServiceMapFiori", "/");
+        			
+        			var deviceModel = new sap.ui.model.json.JSONModel({
+            			isTouch: sap.ui.Device.support.touch,
+            			isNoTouch: !sap.ui.Device.support.touch,
+            			isPhone: sap.ui.Device.system.phone,
+            			isNoPhone: !sap.ui.Device.system.phone,
+            			listMode: sap.ui.Device.system.phone ? "None" : "SingleSelectMaster",
+            			listItemType: sap.ui.Device.system.phone ? "Active" : "Inactive"
+            		});
+            		deviceModel.setDefaultBindingMode("OneWay");
+            		sap.ui.getCore().setModel(deviceModel, "device");
+            		
+        			var mainView = sap.ui.view({id:"MainView", viewName:"view.Main", type:sap.ui.core.mvc.ViewType.XML});
+        			
+        			var app = new sap.m.App("mapServiceApp",{initialPage:"MainView"});
+
+        			app.addPage(mainView);
+        			app.placeAt("content");
+        	    }
+        
+        		function loadGoogleMapsScript() {
+                    var script = document.createElement('script');
+                    script.type = 'text/javascript';
+                    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.19&callback=initializeUI5';
+                    document.body.appendChild(script);
+                }
+                
+                window.onload = loadGoogleMapsScript;
+        
+        	</script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>
+	
+
+
+

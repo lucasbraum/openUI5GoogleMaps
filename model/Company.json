@@ -1,0 +1,363 @@
+[{
+	"CompanyId": "1",
+	"Name": "SAP Labs Palo Alto",
+	"Status": "Action Needed",
+	"Address": "3410 Hillview Ave",
+	"City": "Palo Alto",
+	"State": "CA",
+	"Country": "United States",
+	"ZipCode": "94304",
+	"maintenanceLog": [
+	        {
+	            "Date": "05/02/2014",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the internal resistor",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "05/01/2014",
+	            "Equipment": "XYZ1002",
+	            "Description": "Blue screen",
+	            "Solution": "Restart the equipment",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "01/02/2015",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the plug",
+	            "Processor": "Lucas Braum"
+	        }
+	    ]
+},
+{
+	"CompanyId": "2",
+	"Name": "Company 2",
+	"Status": "Action Needed",
+	"Address": "831 Seale Ave",
+	"City": "Palo Alto",
+	"State": "CA",
+	"Country": "United States",
+	"ZipCode": "94303",
+	"maintenanceLog": [
+	        {
+	            "Date": "05/02/2014",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the internal resistor",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "05/01/2014",
+	            "Equipment": "XYZ1002",
+	            "Description": "Blue screen",
+	            "Solution": "Restart the equipment",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "01/02/2015",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the plug",
+	            "Processor": "Lucas Braum"
+	        }
+	    ]
+},
+{
+	"CompanyId": "3",
+	"Name": "Company 3",
+	"Status": "Action Needed",
+	"Address": "371 Ferne Ave",
+	"City": "Palo Alto",
+	"State": "CA",
+	"Country": "United States",
+	"ZipCode": "94306",
+	"maintenanceLog": [
+	        {
+	            "Date": "05/02/2014",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the internal resistor",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "05/01/2014",
+	            "Equipment": "XYZ1002",
+	            "Description": "Blue screen",
+	            "Solution": "Restart the equipment",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "01/02/2015",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the plug",
+	            "Processor": "Lucas Braum"
+	        }
+	    ]
+},
+{
+	"CompanyId": "4",
+	"Name": "Company 4",
+	"Status": "Action Needed",
+	"Address": "831 Seale Ave",
+	"City": "Palo Alto",
+	"State": "CA",
+	"Country": "United States",
+	"ZipCode": "94303",
+	"maintenanceLog": [
+	        {
+	            "Date": "05/02/2014",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the internal resistor",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "05/01/2014",
+	            "Equipment": "XYZ1002",
+	            "Description": "Blue screen",
+	            "Solution": "Restart the equipment",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "01/02/2015",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the plug",
+	            "Processor": "Lucas Braum"
+	        }
+	    ]
+},
+{
+	"CompanyId": "5",
+	"Name": "Company 5",
+	"Status": "Action Needed",
+	"Address": "632 Hollingsworth Dr",
+	"City": "Palo Alto",
+	"State": "CA",
+	"Country": "United States",
+	"ZipCode": "94022",
+	"maintenanceLog": [
+	        {
+	            "Date": "05/02/2014",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the internal resistor",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "05/01/2014",
+	            "Equipment": "XYZ1002",
+	            "Description": "Blue screen",
+	            "Solution": "Restart the equipment",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "01/02/2015",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the plug",
+	            "Processor": "Lucas Braum"
+	        }
+	    ]
+},
+{
+	"CompanyId": "6",
+	"Name": "Company 6",
+	"Status": "In Progress",
+	"Address": "781 Covington Rd",
+	"City": "Palo Alto",
+	"State": "CA",
+	"Country": "United States",
+	"ZipCode": "94024",
+	"maintenanceLog": [
+	        {
+	            "Date": "05/02/2014",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the internal resistor",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "05/01/2014",
+	            "Equipment": "XYZ1002",
+	            "Description": "Blue screen",
+	            "Solution": "Restart the equipment",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "01/02/2015",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the plug",
+	            "Processor": "Lucas Braum"
+	        }
+	    ]
+},
+{
+	"CompanyId": "7",
+	"Name": "Company 7",
+	"Status": "In Progress",
+	"Address": "679 Mirada Ave",
+	"City": "Palo Alto",
+	"State": "CA",
+	"Country": "United States",
+	"ZipCode": "94305",
+	"maintenanceLog": [
+	        {
+	            "Date": "05/02/2014",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the internal resistor",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "05/01/2014",
+	            "Equipment": "XYZ1002",
+	            "Description": "Blue screen",
+	            "Solution": "Restart the equipment",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "01/02/2015",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the plug",
+	            "Processor": "Lucas Braum"
+	        }
+	    ]
+},
+{
+	"CompanyId": "8",
+	"Name": "Company 8",
+	"Status": "In Progress",
+	"Address": "961 Lincoln Ave",
+	"City": "Palo Alto",
+	"State": "CA",
+	"Country": "United States",
+	"ZipCode": "94301",
+	"maintenanceLog": [
+	        {
+	            "Date": "05/02/2014",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the internal resistor",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "05/01/2014",
+	            "Equipment": "XYZ1002",
+	            "Description": "Blue screen",
+	            "Solution": "Restart the equipment",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "01/02/2015",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the plug",
+	            "Processor": "Lucas Braum"
+	        }
+	    ]
+},
+{
+	"CompanyId": "9",
+	"Name": "Company 9",
+	"Status": "In Progress",
+	"Address": "820 San Pablo Dr",
+	"City": "Palo Alto",
+	"State": "CA",
+	"Country": "United States",
+	"ZipCode": "94043",
+	"maintenanceLog": [
+	        {
+	            "Date": "05/02/2014",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the internal resistor",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "05/01/2014",
+	            "Equipment": "XYZ1002",
+	            "Description": "Blue screen",
+	            "Solution": "Restart the equipment",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "01/02/2015",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the plug",
+	            "Processor": "Lucas Braum"
+	        }
+	    ]
+},
+{
+	"CompanyId": "10",
+	"Name": "Company 10",
+	"Status": "Checked",
+	"Address": "177 Pine Ln",
+	"City": "Palo Alto",
+	"State": "CA",
+	"Country": "United States",
+	"ZipCode": "94022",
+	"maintenanceLog": [
+	        {
+	            "Date": "05/02/2014",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the internal resistor",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "05/01/2014",
+	            "Equipment": "XYZ1002",
+	            "Description": "Blue screen",
+	            "Solution": "Restart the equipment",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "01/02/2015",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the plug",
+	            "Processor": "Lucas Braum"
+	        }
+	    ]
+},
+{
+	"CompanyId": "11",
+	"Name": "Company 11",
+	"Status": "Checked",
+	"Address": "1305 Space Park Way",
+	"City": "Palo Alto",
+	"State": "CA",
+	"Country": "United States",
+	"ZipCode": "94043",
+	"maintenanceLog": [
+	        {
+	            "Date": "05/02/2014",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the internal resistor",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "05/01/2014",
+	            "Equipment": "XYZ1002",
+	            "Description": "Blue screen",
+	            "Solution": "Restart the equipment",
+	            "Processor": "Lucas Braum"
+	        },
+	        {
+	            "Date": "01/02/2015",
+	            "Equipment": "XYZ1001",
+	            "Description": "The equipment was not turning on",
+	            "Solution": "Replace the plug",
+	            "Processor": "Lucas Braum"
+	        }
+	    ]
+}]

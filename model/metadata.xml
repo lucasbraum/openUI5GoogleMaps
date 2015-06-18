@@ -1,0 +1,26 @@
+<edmx:Edmx Version="1.0"
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+    xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+    xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="MAINTENANCEMAP" xml:lang="en"
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="Company" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CompanyId" />
+                </Key>
+                <Property Name="CompanyId" Type="Edm.String" Nullable="false" MaxLength="5" sap:label="Company ID"/>
+                <Property Name="Name" Type="Edm.String" MaxLength="40" sap:label="Name"/>
+                <Property Name="Status" Type="Edm.String" MaxLength="40" sap:label="Status"/>
+                <Property Name="Address" Type="Edm.String" MaxLength="40" sap:label="Address"/>
+                <Property Name="City" Type="Edm.String" MaxLength="40" sap:label="City"/>
+                <Property Name="State" Type="Edm.String" MaxLength="2" sap:label="State"/>
+                <Property Name="ZipCode" Type="Edm.String" MaxLength="40" sap:label="Zip Code"/>
+                <Property Name="Country" Type="Edm.String" MaxLength="40" sap:label="Country"/>
+            </EntityType>
+            <EntityContainer Name="MAINTENANCEMAP" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="Companies" EntityType="MAINTENANCEMAP.Company" sap:content-version="1"/>
+            </EntityContainer>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

@@ -1,0 +1,20 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" controllerName="view.MapView" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+    
+	<Page title="{i18n>maintenanceServiceMap}" height="100%" enableScrolling ="false" showNavButton="true" navButtonPress="backButton">
+		<content height="100%" width="100%">
+		
+            <core:HTML id="map_canvas" content='&lt;div class=&quot;mapCanvas&quot;&gt;&lt;div&gt;'></core:HTML>
+            
+		</content>
+		
+		<footer>
+            <Toolbar>
+                <ToolbarSpacer/>
+                <Button text="{i18n>routeDetails}" id="routeDetailsBtn" press="openRouteDetails" icon="sap-icon://map-3" />
+            </Toolbar>
+        </footer>
+	</Page>
+</core:View>

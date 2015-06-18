@@ -1,0 +1,22 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" controllerName="view.Main" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	<Page title="{i18n>sapMaintenanceService}" enableScrolling="false" >
+        <TileContainer
+          id="container"
+          tileDelete="handleTileDelete">
+            <StandardTile
+                icon="sap-icon://map-2"
+                press="tileMapOnPress"
+                title="{i18n>mapOfCompanies}"/>
+            <StandardTile
+                icon="sap-icon://detail-view"
+                press="tileListOnPress"
+                title="{i18n>listOfCompanies}"/>
+        </TileContainer>
+    
+  </Page>
+  
+</core:View>

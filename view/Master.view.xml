@@ -1,0 +1,42 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" controllerName="view.Master" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	<Page 
+        id="masterPage" 
+        showNavButton="true"
+        navButtonPress="backButton"
+        title="{i18n>customers}">
+        <subHeader
+            id="masterSubHeader">
+            <Bar 
+                id="searchBar">
+                <contentMiddle>
+                    <SearchField id="searchField" search="onSearch" width="100%" 
+                        placeholder="{i18n>masterSearchPlaceholder}" showRefreshButton="{device>/isNoTouch}" tooltip="{i18n>masterSearchPlaceholder}">
+                    </SearchField>
+                </contentMiddle>
+            </Bar>
+        </subHeader>
+        <content>
+            <List id="list" select="onSelect" mode="{device>/listMode}" noDataText="{i18n>masterListNoDataText}" 
+                growing="true" growingScrollToLoad="true" items="{Companies>/companies}">
+                <items>
+                    <CustomListItem class="listRequestsItem" press="onSelect" type="{device>/listItemType}" >
+                		<Text text="{Companies>Name}"  class="listLabelName"/>
+                		<ObjectStatus text="{path: 'Companies>Status'}" state="{path: 'Companies>Status', formatter: 'ServiceMapFiori.utils.Formatter.status'}" class="listLabelStatus" />
+                		<Text text="{Companies>Address}"  class="listLabelAddress"/>
+                		<Text text="{parts: [{path: 'Companies>City'},{path: 'Companies>State'},{path: 'Companies>ZipCode'}], formatter:'ServiceMapFiori.utils.Formatter.addressListFormatter'}"  class="listLabelAddressLine2"></Text>
+                	</CustomListItem>
+                </items>
+            </List>
+        </content>
+        
+        <footer>
+            <Toolbar>
+            </Toolbar>
+        </footer>
+    </Page>
+    
+</core:View>

@@ -1,0 +1,28 @@
+{
+  "run": [
+    {
+      "filePath": "/ServiceMapFiori/index.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 7069141,
+        "displayName": "New Web Application 8"
+      }
+    },
+    {
+      "filePath": "/ServiceRequests/index.html",
+      "previewMode": 0,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [],
+      "_metadata": {
+        "runnerId": "webapprunner",
+        "id": 3788411,
+        "displayName": "New Web Application 1"
+      }
+    }
+  ]
+}

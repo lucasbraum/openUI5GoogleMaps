@@ -1,0 +1,83 @@
+.mapCanvas {
+    position: absolute;
+    height : 100%;
+    width: 100%;
+}
+
+.ActionNeeded {
+    color: #CC1919;
+}
+
+.InProgress {
+    color: #F6CA00;
+}
+
+.Checked {
+    color: #21B966;
+}
+
+.listLabelName {
+    padding: 20px 20px 0;
+    font-weight: bold;
+    display: block;
+    color: #009DE0;
+    width: 100%;
+}
+
+.listLabelStatus {
+    padding: 8px 20px;
+    font-weight: bold;
+    float: right;
+    font-size: 0.9em;
+    text-align: right !important;
+    width: 100%;
+}
+
+.listLabelAddress {
+    padding: 0 20px 10px;
+    color: #676767;
+    display: block;
+    width: 100%;
+}
+
+.listLabelAddressLine2 {
+    padding: 0 20px 20px;
+    color: #676767;
+    display: block;
+    width: 100%;
+}
+
+.detailPageTitle>div>div>span>h1>span>div {
+  color: #494949;
+  font-weight: bold;
+}
+
+.detailPageStatus>span {
+    font-size: 1.2em;
+    font-weight: bold !important;
+}
+
+.routeDetailsPanel {
+    max-width: 500px;
+}
+
+.maintenanceLogsLabel {
+    color: #494949;
+    font-weight: bold;
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+
+.sapMObjStatusWarning>.sapMObjStatusText, .sapMObjStatusWarning>.sapMObjStatusIcon {
+  color: #F6CA00;
+}
+
+.sapMObjStatusError>.sapMObjStatusText, .sapMObjStatusError>.sapMObjStatusIcon {
+  color: #E76161;
+}
+
+.sapMObjStatusSuccess>.sapMObjStatusText, .sapMObjStatusSuccess>.sapMObjStatusIcon {
+  color: #21B966;
+}
+
+

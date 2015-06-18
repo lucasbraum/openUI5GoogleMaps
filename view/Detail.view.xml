@@ -1,0 +1,124 @@
+<core:View xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+	xmlns="sap.m" controllerName="view.Detail" 
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	<Page
+        id="detailPage" 
+        title="{i18n>customerDetails}">
+        
+        <content>
+        
+            <ObjectHeader id="detailHeader" class="detailPageTitle" title="{selectedCompany>/Name}">
+                <statuses>
+                    <ObjectStatus text="{path: 'selectedCompany>/Status'}" state="{path: 'selectedCompany>/Status', formatter: 'ServiceMapFiori.utils.Formatter.status'}" class="detailPageStatus" />
+                </statuses>
+            </ObjectHeader>
+            
+            <IconTabBar id="idIconTabBar" expanded="{device>/isNoPhone}">
+                
+    			<items id="detailsItems">
+                    <IconTabFilter 
+                        id="iconTabFilter1" 
+                        key="selfInfo" 
+                        icon="sap-icon://hint">
+                        <content>
+							<f:SimpleForm 
+								id="iconTabFilter1form" 
+								minWidth="1024" 
+								editable="false" 
+								layout="ResponsiveGridLayout" 
+								labelSpanL="3" 
+								labelSpanM="3" 
+								emptySpanL="4" 
+								emptySpanM="4" 
+								columnsL="1">
+								<f:content>
+									<Label text="{i18n>address}"></Label>
+									<Text 
+										text="{selectedCompany>/Address}"
+										maxLines="0">
+									</Text>
+									<Label text="{i18n>city}"></Label>
+									<Text 
+										text="{selectedCompany>/City}"
+										maxLines="0">
+									</Text>
+									<Label text="{i18n>state}"></Label>
+									<Text 
+										text="{selectedCompany>/State}"
+										maxLines="0">
+									</Text>
+									<Label text="{i18n>zipCode}"></Label>
+									<Text 
+										text="{selectedCompany>/ZipCode}"
+										maxLines="0">
+									</Text>
+									<Label text="{i18n>country}"></Label>
+									<Text 
+										text="{selectedCompany>/Country}"
+										maxLines="0">
+									</Text>
+								</f:content>
+								
+							</f:SimpleForm>
+                        </content>
+                        
+                    </IconTabFilter>
+                    <IconTabFilter 
+                        id="iconTabFilter2" 
+                        key="selfInfo" 
+                        icon="sap-icon://work-history">
+                        <content>
+                            
+                            <Text text="{i18n>maintenanceLogs}" class="maintenanceLogsLabel"></Text>
+                            
+                            <Table id="maintenanceLogsTable" items="{selectedCompany>/maintenanceLog}" noDataText="{i18n>logNoDataText}">
+                                <columns>
+                                  <Column>
+                                    <Text text="{i18n>date}" />
+                                  </Column>
+                                  <Column>
+                                    <Text text="{i18n>equipment}" />
+                                  </Column>
+                                  <Column>
+                                    <Text text="{i18n>description}" />
+                                  </Column>
+                                  <Column>
+                                    <Text text="{i18n>solution}" />
+                                  </Column>
+                                  <Column>
+                                    <Text text="{i18n>processor}" />
+                                  </Column>
+                                </columns>
+                                <items>
+                                    <ColumnListItem vAlign="Middle">
+                                        <cells>
+                                            <Text text="{selectedCompany>Date}" wrapping="false" />
+                                            <Text text="{selectedCompany>Equipment}" wrapping="false"/>
+                                            <Text text="{selectedCompany>Description}" />
+                                            <Text text="{selectedCompany>Solution}" />
+                                            <Text text="{selectedCompany>Processor}" />
+                                        </cells>
+                                    </ColumnListItem>
+                                </items>
+                              </Table>
+                        
+                        </content>
+                    </IconTabFilter>
+                </items>
+            </IconTabBar>
+        </content>
+        
+        <footer>
+            <Toolbar>
+                <ToolbarSpacer/>
+                <Button text="Start Progress" id="routeDetailsBtn" press="startProgress"/>
+            </Toolbar>
+        </footer>
+        
+    </Page>
+    
+</core:View>
